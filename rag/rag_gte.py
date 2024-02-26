@@ -58,10 +58,10 @@ model = SentenceTransformer('thenlper/gte-large').to(device)
 # ## Record to Huggingface Hub
 # ds = Dataset.from_dict(myDataset)
 # access_token = "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"
-# ds.push_to_hub("LongQ/wiki-gte-rag", private=True, token="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")
+# ds.push_to_hub("LongQ/wiki-gte-rag", private=True, token="")
 
 # ### Load docBase ###
-# dataset = load_dataset("LongQ/wiki-gte-rag", token="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")["train"]
+# dataset = load_dataset("LongQ/wiki-gte-rag", token="")["train"]
 #
 # ### Generate Doc for Truthful QA ###
 # test_dataset = load_dataset("truthful_qa", "generation")["validation"]
