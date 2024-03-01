@@ -1,6 +1,8 @@
 # RAG quick start
 By using [RAG_Quick_Start.ipynb], you can embed any passages for retrieval. All you need to do is to preprocess your passages to a specific format. There's an example of how to use the code. I embed one Sherlock Holmes novel (which is the [SH.txt])
 
+I'm pretty sure [RAG_Quick_Start.ipynb] is NOT perfect!! I'll test it on different datasets and keep refining this!
+
 # Study notes
 I spent a lot time learning RAG, and add detailed notes in [train_rag.ipynb]. But it's a little bit messy...
 
