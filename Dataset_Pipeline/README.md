@@ -43,8 +43,8 @@ ds_len = 100
 tf_questions = load_dataset("truthful_qa", "generation")["validation"][0:ds_len]["question"]
 
 pipe = ds_pipe(tf_questions, "exa")
-pipe.rag("")
-pipe.generate_response("")
+pipe.rag("xxxxxxxxxxx")
+pipe.generate_response("xxxxxxxxxxxxx")
 pipe.build_ds("TruthfulQA_dataset")
 ```
 
