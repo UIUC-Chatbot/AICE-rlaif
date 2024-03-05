@@ -21,3 +21,34 @@ class ds_pipe:
     def generate_response(self, anyscale_key: str):
     def build_ds(self, output_dir: str):
 ```
+
+### Call Pipeline
+```python
+pipe = ds_pipe(questions, <RAG_METHOD>)
+pipe.rag("<EXA_API_KEY>")
+pipe.generate_response("<ANYSCALE_API_KEY>")
+pipe.build_ds("<OUTPUT_EXCEL_FILE_NAME>")
+```
+
+ *  questions: a list of questions.
+
+ *  <RAG_METHOD>: "exa" or "gte".
+
+ *  output file: to current directory as default.
+
+### Example Call
+```python
+## TruthfulQA
+ds_len = 100
+tf_questions = load_dataset("truthful_qa", "generation")["validation"][0:ds_len]["question"]
+
+pipe = ds_pipe(tf_questions, "exa")
+pipe.rag("")
+pipe.generate_response("")
+pipe.build_ds("TruthfulQA_dataset")
+```
+
+## Output Example (Truthful QA)
+![image](https://github.com/UIUC-Chatbot/AICE-rlaif/assets/143149589/c202db62-52c0-490c-8706-9177a5d85166)
+
+
