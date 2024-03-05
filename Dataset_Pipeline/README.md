@@ -14,7 +14,7 @@
 ## Usage
 
 ### Class Overview
-```
+```python
 class ds_pipe:
     def __init__(self, questions: list, rag_mt: str):
     def rag(self, exa_key: str):
