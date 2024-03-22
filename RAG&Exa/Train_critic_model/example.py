@@ -28,7 +28,7 @@ corpus_dataset, index = process_RAG_data(corpus)
 titles, passages = ask_question_no_generator(test_question, corpus, index)
 
 login(
-token="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", # ADD YOUR TOKEN HERE
+token="XXXXXXX", # ADD YOUR TOKEN HERE
 add_to_git_credential=True
 )
 
