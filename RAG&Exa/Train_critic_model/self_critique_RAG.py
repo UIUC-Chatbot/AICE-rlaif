@@ -10,7 +10,7 @@ from peft import LoraConfig
 import time
 
 login(
-token="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", # ADD YOUR TOKEN HERE
+token="XXXXXX", # ADD YOUR TOKEN HERE
 add_to_git_credential=True
 )
 print("Loading dataset…………………………")
