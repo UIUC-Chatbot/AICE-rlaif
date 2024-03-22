@@ -11,3 +11,8 @@ I spent a lot time learning RAG, and added detailed notes in [train_rag.ipynb]. 
 
 # Exa datasets
 I tried to use Exa to obtain RAG documents for OpenHermes-2.5 dataset. The code is in [Exa_dataset.ipynb].The result is in [search_response.json]. I gave Exa 100 questions and reached the usage limits. But there were only 10 responses. I haven't figured out why yet.
+
+# Train_critic_model
+I fine-tuned ["teknium/OpenHermes-2.5-Mistral-7B"] model with self-rag dataset. Detailed things can be found in this folder.\
+I used this tutorial provided by Kastan: https://www.philschmid.de/fine-tune-llms-in-2024-with-trl \
+This tutorial is REALLY helpful!!!
