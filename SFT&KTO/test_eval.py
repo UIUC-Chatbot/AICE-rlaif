@@ -46,9 +46,9 @@ df_testRow = 0
 model_id = "LongQ/Mistral_SFT_KTO"
 # model_id = "LongQ/Mistral_KTO_CRISMALL"
 
-tokenizer = AutoTokenizer.from_pretrained(model_id, token="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", padding_side="left")
+tokenizer = AutoTokenizer.from_pretrained(model_id, token="", padding_side="left")
 
-model = AutoModelForCausalLM.from_pretrained(model_id, device_map="auto", max_memory = { 0: '30.0GiB', 1: '30.0GiB',}, token="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")
+model = AutoModelForCausalLM.from_pretrained(model_id, device_map="auto", max_memory = { 0: '30.0GiB', 1: '30.0GiB',}, token="")
 
 ### Generating Response ###
 for idx in range(len(questions)):

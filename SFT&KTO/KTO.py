@@ -58,7 +58,7 @@ tokenizer.pad_token = tokenizer.unk_token
 tokenizer.add_eos_token = True
 tokenizer.add_bos_token = True
 
-model = AutoModelForCausalLM.from_pretrained(model_id, token="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", device_map="auto", max_memory={0: '30.0GiB', 1: '30.0GiB'})
+model = AutoModelForCausalLM.from_pretrained(model_id, token="", device_map="auto", max_memory={0: '30.0GiB', 1: '30.0GiB'})
 
 ### create PEFT-Lora model ###
 peft_config = LoraConfig(
@@ -99,5 +99,5 @@ kto_trainer.train()
 ### Save Model ###
 # kto_trainer.model.save_pretrained("Mistral_KTO_TFQA")
 # kto_trainer.tokenizer.save_pretrained("Mistral_KTO_TFQA")
-kto_trainer.model.push_to_hub("LongQ/Mistral_SFT_KTO", private=True, token="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")
-kto_trainer.tokenizer.push_to_hub("LongQ/Mistral_SFT_KTO", private=True, token="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")
+kto_trainer.model.push_to_hub("LongQ/Mistral_SFT_KTO", private=True, token="")
+kto_trainer.tokenizer.push_to_hub("LongQ/Mistral_SFT_KTO", private=True, token="")
