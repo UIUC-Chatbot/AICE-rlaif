@@ -28,7 +28,7 @@
 
  *  KTO: Dataset_pipeline(Teacher Model)[0:100](question - final_answer) + TruthfulQA[0:100](question - incorrect_answer).
 
- *  Testset: TruthfulQA[0:100](question).
+ *  Testset: TruthfulQA\[0:100\](question).
 
 ### Result
 
