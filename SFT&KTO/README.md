@@ -34,6 +34,37 @@
 
 ![image](https://github.com/UIUC-Chatbot/AICE-rlaif/assets/143149589/785136b0-733c-452f-9d16-8dda933b2b6e)
 
+## Multi-node Training
+
+### Files
+
+ * SFT.py: main python file for SFT. (*updated*)
+
+ * KTO.py: main python file for KTO. (*not yet updated*)
+
+ * fsdp_config.yaml: config for fsdp.
+
+ * finetune2.sh: SLURM file to request multiple nodes and manage work.
+
+### Usage
+
+ * Change nodes used for training: in file finetune2.sh
+
+```sh
+...
+#SBATCH --nodes=2
+...
+srun torchrun \
+--nnodes 2 \
+...
+```
+
+ * Train: in server cmd
+
+```sh
+sbatch finetune.sh
+```
+
 
 
 
