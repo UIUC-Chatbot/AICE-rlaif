@@ -1,0 +1,4 @@
+"max_prompt_length":3072,
+"max_completion_length":3072,
+"output_dir":"./llama-3-70b-uiuc","learning_rate": 0.0002,
+"lr_scheduler_type":"constant","num_train_epochs":5,"per_device_train_batch_size":1,"per_device_eval_batch_size":1,"gradient_accumulation_steps":2,"optim":"adamw_torch","logging_steps":10,"save_strategy":"epoch","max_grad_norm": 0.3,"warmup_ratio":0.03,"bf16":true,"tf32":true,"gradient_checkpointing":true,"beta":0.1,"desirable_weight":1.0,"undesirable_weight":1.0,"fsdp":"full_shard auto_wrap offload","fsdp_config":{"backward_prefetch": "backward_pre", "forward_prefetch": "false", "use_orig_params": "false"}}
