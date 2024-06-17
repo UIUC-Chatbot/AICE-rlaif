@@ -5,7 +5,7 @@ from transformers import TrainingArguments
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, HfArgumentParser
 import os
 import torch
-from peft import LoraConfig, TaskType, get_peft_model, PeftModel, AutoPeftModelForCausalLM
+from peft import LoraConfig, TaskType, get_peft_model, PeftModel, AutoPeftModelForCausalLM, cast_mixed_precision_params
 from accelerate import Accelerator, PartialState
 from dataclasses import dataclass, field
 import pandas as pd
@@ -147,8 +147,8 @@ if kto_config.gradient_checkpointing:
 ### Load Model ###
 
 ### Quantization ###
-torch_dtype = torch.bfloat16
-quant_storage_dtype = torch.bfloat16
+torch_dtype = torch.float16
+quant_storage_dtype = torch.float16
 
 quantization_config = BitsAndBytesConfig(
     load_in_4bit=True,
@@ -158,6 +158,13 @@ quantization_config = BitsAndBytesConfig(
     bnb_4bit_quant_storage=quant_storage_dtype,
 )
 
+# quantization_config = BitsAndBytesConfig(
+#     load_in_4bit=True,
+#     bnb_4bit_quant_type="nf4",
+#     bnb_4bit_compute_dtype=torch_dtype,
+#     bnb_4bit_quant_storage=quant_storage_dtype,
+# )
+
 # model_id = "mistralai/Mistral-7B-v0.1"
 # model_id = "teknium/OpenHermes-2.5-Mistral-7B"
 # model_id = "mistralai/Mixtral-8x7B-Instruct-v0.1"
@@ -165,10 +172,10 @@ quantization_config = BitsAndBytesConfig(
 # model_id = "meta-llama/Meta-Llama-3-70B-Instruct"
 # model_id = "LongQ/Mistral_SFT_TFQA"
 
-lora_model_id = "LongQ/Llama3_8B_CHAT_UIUC_ECE_SFT_Lora"
+lora_model_id = "LongQ/Llama3_70B_CHAT_UIUC_ECE_SFT_Lora"
 # lora_model_id = "LongQ/Llama3_70B_CHAT_UIUC_ECE_SFT_Lora"
 
-merged_model_id = "LongQ/Llama3_8B_CHAT_UIUC_ECE_SFT_Lora_Merged"
+merged_model_id = "LongQ/Llama3_70B_CHAT_UIUC_ECE_SFT_Lora_Merged"
 
 LLAMA_3_CHAT_TEMPLATE="{% set loop_messages = messages %}{% for message in loop_messages %}{% set content = '<|start_header_id|>' + message['role'] + '<|end_header_id|>\n\n'+ message['content'] | trim + '<|eot_id|>' %}{% if loop.index0 == 0 %}{% set content = bos_token + content %}{% endif %}{{ content }}{% endfor %}{% if add_generation_prompt %}{{ '<|start_header_id|>assistant<|end_header_id|>\n\n' }}{% endif %}"
 
@@ -194,24 +201,56 @@ def template_dataset(examples):
 # )
 
 ### Load Merged Model ###
-model = AutoModelForCausalLM.from_pretrained(
-    merged_model_id,
-    token="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",
-    quantization_config=quantization_config,
-    attn_implementation="sdpa",  # use sdpa, alternatively use "flash_attention_2"
-    torch_dtype=quant_storage_dtype,
-    use_cache=False,  # this is needed for gradient checkpointing
-    # device_map={'':torch.cuda.current_device()},
-)
+# model = AutoModelForCausalLM.from_pretrained(
+#     merged_model_id,
+#     token="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",
+#     # quantization_config=quantization_config,
+#     attn_implementation="sdpa",  # use sdpa, alternatively use "flash_attention_2"
+#     torch_dtype=torch_dtype,
+#     use_cache=False,  # this is needed for gradient checkpointing
+#     # device_map={'':torch.cuda.current_device()},
+# )
 
 ### Load Lora Model and Merge ###
 # model = AutoPeftModelForCausalLM.from_pretrained(
 #     lora_model_id,
 #     token="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",
-#     quantization_config=quantization_config,
+#     # quantization_config=quantization_config,
 #     attn_implementation="sdpa",
-#     torch_dtype=quant_storage_dtype,
-#     use_cache=False,
+#     torch_dtype=torch.float32,
+#     # load_in_4bit=True,
+#     is_trainable=True,
+#     # use_cache=False,
+#     # device_map={'':torch.cuda.current_device()},
+# )
+
+model = AutoPeftModelForCausalLM.from_pretrained(
+    lora_model_id, # location of saved SFT model
+    token="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",
+    # low_cpu_mem_usage=True,
+    # quantization_config=quantization_config,
+    torch_dtype=torch.float8,
+    # load_in_4bit=True,
+    # is_trainable=True,
+)
+# model_ref = AutoPeftModelForCausalLM.from_pretrained(
+#     lora_model_id, # same model as the main one
+#     token="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",
+#     low_cpu_mem_usage=True,
+#     torch_dtype=torch.float16,
+#     load_in_4bit=True,
+# )
+
+
+# model_ref = AutoPeftModelForCausalLM.from_pretrained(
+#     lora_model_id,
+#     token="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",
+#     # quantization_config=quantization_config,
+#     attn_implementation="sdpa",
+#     torch_dtype=torch.float16,
+#     # load_in_4bit=True,
+#     # is_trainable=True,
+#     # use_cache=False,
 #     # device_map={'':torch.cuda.current_device()},
 # )
 
@@ -238,14 +277,15 @@ peft_config = LoraConfig(
     task_type="CAUSAL_LM",
     modules_to_save=["lm_head", "embed_tokens"] # add if you want to use the Llama 3 instruct template
 )
-# model = get_peft_model(model, peft_config).to(torch.cuda.current_device())
+# model = get_peft_model(model, peft_config)
+# cast_mixed_precision_params(model, dtype=torch_dtype)
 # print("PEFT-Lora Model created:")
 # model.print_trainable_parameters()
 
 ### Load Dataset ###
 
 ## Latest UIUC.CHAT Dataset, see AICE.ipynb for detailed construction
-kto_set = load_dataset("json", data_files="kto_dataset.json", split="train")
+kto_set = load_dataset("json", data_files="kto_dataset_small.json", split="train")
 kto_set = kto_set.map(template_dataset)
 
 ### create accelerator ###
@@ -331,6 +371,7 @@ if kto_trainer.accelerator.is_main_process:
     print("Completion:", kto_set[0]["completion"])
     print("Label:", kto_set[0]["label"])
 print("\nStart Training!")
+kto_trainer.is_fsdp_enabled = True
 kto_trainer.train()
 
 ### Save Model ###
@@ -343,19 +384,19 @@ kto_trainer.train()
 #     unwrapped_model.push_to_hub("LongQ/Llama3_UIUC_SFT_KTO_Lora", private=False)
 #     unwrapped_tokenizer.push_to_hub("LongQ/Llama3_UIUC_SFT_KTO_Lora", private=False)
 
-kto_trainer.is_fsdp_enabled = True
+# kto_trainer.is_fsdp_enabled = True
 
 # kto_trainer.accelerator.wait_for_everyone()
 kto_trainer.save_model()
 
 print("Pushing Models to Hub...")
-kto_trainer.model.push_to_hub("LongQ/Llama3_8B_CHAT_UIUC_ECE_SFT_KTO_Lora", private=True, token="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")
-kto_trainer.tokenizer.push_to_hub("LongQ/Llama3_8B_CHAT_UIUC_ECE_SFT_KTO_Lora", private=True, token="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")
+kto_trainer.model.push_to_hub("LongQ/Llama3_70B_CHAT_UIUC_ECE_SFT_KTO_Lora", private=True, token="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")
+kto_trainer.tokenizer.push_to_hub("LongQ/Llama3_70B_CHAT_UIUC_ECE_SFT_KTO_Lora", private=True, token="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")
 
 # if kto_trainer.accelerator.is_main_process:
 #     print("Pushing Models to Hub...")
-#     kto_trainer.model.push_to_hub("LongQ/Llama3_8B_UIUC_ECE_SFT_Lora", private=True, token="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")
-#     kto_trainer.tokenizer.push_to_hub("LongQ/Llama3_8B_UIUC_ECE_SFT_Lora", private=True, token="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")
+#     kto_trainer.model.push_to_hub("LongQ/Llama3_8B_CHAT_UIUC_ECE_SFT_KTO_Lora", private=True, token="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")
+#     kto_trainer.tokenizer.push_to_hub("LongQ/Llama3_8B_CHAT_UIUC_ECE_SFT_KTO_Lora", private=True, token="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")
 #     print("Successfully pushed model.")
 # kto_trainer.accelerator.wait_for_everyone()
 
