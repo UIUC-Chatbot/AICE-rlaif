@@ -1,0 +1,529 @@
+I0723 07:02:11.909000 140300735231808 torch/distributed/launcher/api.py:188] Starting elastic_operator with launch configs:
+I0723 07:02:11.909000 140300735231808 torch/distributed/launcher/api.py:188]   entrypoint       : ./SFT3.py
+I0723 07:02:11.909000 140300735231808 torch/distributed/launcher/api.py:188]   min_nodes        : 8
+I0723 07:02:11.909000 140300735231808 torch/distributed/launcher/api.py:188]   max_nodes        : 8
+I0723 07:02:11.909000 140300735231808 torch/distributed/launcher/api.py:188]   nproc_per_node   : 1
+I0723 07:02:11.909000 140300735231808 torch/distributed/launcher/api.py:188]   run_id           : 26590
+I0723 07:02:11.909000 140300735231808 torch/distributed/launcher/api.py:188]   rdzv_backend     : c10d
+I0723 07:02:11.909000 140300735231808 torch/distributed/launcher/api.py:188]   rdzv_endpoint    : 141.142.254.25:29500
+I0723 07:02:11.909000 140300735231808 torch/distributed/launcher/api.py:188]   rdzv_configs     : {'timeout': 900}
+I0723 07:02:11.913000 140167856817984 torch/distributed/launcher/api.py:188] Starting elastic_operator with launch configs:
+I0723 07:02:11.913000 140167856817984 torch/distributed/launcher/api.py:188]   entrypoint       : ./SFT3.py
+I0723 07:02:11.913000 140167856817984 torch/distributed/launcher/api.py:188]   min_nodes        : 8
+I0723 07:02:11.913000 140167856817984 torch/distributed/launcher/api.py:188]   max_nodes        : 8
+I0723 07:02:11.913000 140167856817984 torch/distributed/launcher/api.py:188]   nproc_per_node   : 1
+I0723 07:02:11.913000 140167856817984 torch/distributed/launcher/api.py:188]   run_id           : 26590
+I0723 07:02:11.913000 140167856817984 torch/distributed/launcher/api.py:188]   rdzv_backend     : c10d
+I0723 07:02:11.913000 140167856817984 torch/distributed/launcher/api.py:188]   rdzv_endpoint    : 141.142.254.25:29500
+I0723 07:02:11.913000 140167856817984 torch/distributed/launcher/api.py:188]   rdzv_configs     : {'timeout': 900}
+I0723 07:02:11.913000 140572584228672 torch/distributed/launcher/api.py:188] Starting elastic_operator with launch configs:
+I0723 07:02:11.913000 140572584228672 torch/distributed/launcher/api.py:188]   entrypoint       : ./SFT3.py
+I0723 07:02:11.913000 140572584228672 torch/distributed/launcher/api.py:188]   min_nodes        : 8
+I0723 07:02:11.913000 140572584228672 torch/distributed/launcher/api.py:188]   max_nodes        : 8
+I0723 07:02:11.913000 140572584228672 torch/distributed/launcher/api.py:188]   nproc_per_node   : 1
+I0723 07:02:11.913000 140572584228672 torch/distributed/launcher/api.py:188]   run_id           : 26590
+I0723 07:02:11.913000 140572584228672 torch/distributed/launcher/api.py:188]   rdzv_backend     : c10d
+I0723 07:02:11.913000 140572584228672 torch/distributed/launcher/api.py:188]   rdzv_endpoint    : 141.142.254.25:29500
+I0723 07:02:11.913000 140572584228672 torch/distributed/launcher/api.py:188]   rdzv_configs     : {'timeout': 900}
+I0723 07:02:11.909000 140300735231808 torch/distributed/launcher/api.py:188]   max_restarts     : 0
+I0723 07:02:11.909000 140300735231808 torch/distributed/launcher/api.py:188]   monitor_interval : 5
+I0723 07:02:11.909000 140300735231808 torch/distributed/launcher/api.py:188]   log_dir          : /tmp/torchelastic_32ursmfl
+I0723 07:02:11.909000 140300735231808 torch/distributed/launcher/api.py:188]   metrics_cfg      : {}
+I0723 07:02:11.909000 140300735231808 torch/distributed/launcher/api.py:188] 
+I0723 07:02:11.915000 140300735231808 torch/distributed/elastic/agent/server/api.py:866] [default] starting workers for entrypoint: python3.10
+I0723 07:02:11.915000 140300735231808 torch/distributed/elastic/agent/server/api.py:699] [default] Rendezvous'ing worker group
+I0723 07:02:11.913000 140167856817984 torch/distributed/launcher/api.py:188]   max_restarts     : 0
+I0723 07:02:11.913000 140167856817984 torch/distributed/launcher/api.py:188]   monitor_interval : 5
+I0723 07:02:11.913000 140167856817984 torch/distributed/launcher/api.py:188]   log_dir          : /tmp/torchelastic_obpavw68
+I0723 07:02:11.913000 140167856817984 torch/distributed/launcher/api.py:188]   metrics_cfg      : {}
+I0723 07:02:11.913000 140167856817984 torch/distributed/launcher/api.py:188] 
+I0723 07:02:11.913000 140572584228672 torch/distributed/launcher/api.py:188]   max_restarts     : 0
+I0723 07:02:11.913000 140572584228672 torch/distributed/launcher/api.py:188]   monitor_interval : 5
+I0723 07:02:11.913000 140572584228672 torch/distributed/launcher/api.py:188]   log_dir          : /tmp/torchelastic_c7kpshl7
+I0723 07:02:11.913000 140572584228672 torch/distributed/launcher/api.py:188]   metrics_cfg      : {}
+I0723 07:02:11.913000 140572584228672 torch/distributed/launcher/api.py:188] 
+I0723 07:02:11.922000 140167856817984 torch/distributed/elastic/agent/server/api.py:866] [default] starting workers for entrypoint: python3.10
+I0723 07:02:11.928000 140572584228672 torch/distributed/elastic/agent/server/api.py:866] [default] starting workers for entrypoint: python3.10
+I0723 07:02:11.922000 140167856817984 torch/distributed/elastic/agent/server/api.py:699] [default] Rendezvous'ing worker group
+I0723 07:02:11.928000 140572584228672 torch/distributed/elastic/agent/server/api.py:699] [default] Rendezvous'ing worker group
+I0723 07:02:11.961000 140266378585920 torch/distributed/launcher/api.py:188] Starting elastic_operator with launch configs:
+I0723 07:02:11.961000 140266378585920 torch/distributed/launcher/api.py:188]   entrypoint       : ./SFT3.py
+I0723 07:02:11.961000 140266378585920 torch/distributed/launcher/api.py:188]   min_nodes        : 8
+I0723 07:02:11.961000 140266378585920 torch/distributed/launcher/api.py:188]   max_nodes        : 8
+I0723 07:02:11.961000 140266378585920 torch/distributed/launcher/api.py:188]   nproc_per_node   : 1
+I0723 07:02:11.961000 140266378585920 torch/distributed/launcher/api.py:188]   run_id           : 26590
+I0723 07:02:11.961000 140266378585920 torch/distributed/launcher/api.py:188]   rdzv_backend     : c10d
+I0723 07:02:11.961000 140266378585920 torch/distributed/launcher/api.py:188]   rdzv_endpoint    : 141.142.254.25:29500
+I0723 07:02:11.961000 140266378585920 torch/distributed/launcher/api.py:188]   rdzv_configs     : {'timeout': 900}
+I0723 07:02:11.970000 140590082209600 torch/distributed/launcher/api.py:188] Starting elastic_operator with launch configs:
+I0723 07:02:11.970000 140590082209600 torch/distributed/launcher/api.py:188]   entrypoint       : ./SFT3.py
+I0723 07:02:11.970000 140590082209600 torch/distributed/launcher/api.py:188]   min_nodes        : 8
+I0723 07:02:11.970000 140590082209600 torch/distributed/launcher/api.py:188]   max_nodes        : 8
+I0723 07:02:11.970000 140590082209600 torch/distributed/launcher/api.py:188]   nproc_per_node   : 1
+I0723 07:02:11.970000 140590082209600 torch/distributed/launcher/api.py:188]   run_id           : 26590
+I0723 07:02:11.970000 140590082209600 torch/distributed/launcher/api.py:188]   rdzv_backend     : c10d
+I0723 07:02:11.970000 140590082209600 torch/distributed/launcher/api.py:188]   rdzv_endpoint    : 141.142.254.25:29500
+I0723 07:02:11.970000 140590082209600 torch/distributed/launcher/api.py:188]   rdzv_configs     : {'timeout': 900}
+I0723 07:02:11.998000 140099030734656 torch/distributed/launcher/api.py:188] Starting elastic_operator with launch configs:
+I0723 07:02:11.998000 140099030734656 torch/distributed/launcher/api.py:188]   entrypoint       : ./SFT3.py
+I0723 07:02:11.998000 140099030734656 torch/distributed/launcher/api.py:188]   min_nodes        : 8
+I0723 07:02:11.998000 140099030734656 torch/distributed/launcher/api.py:188]   max_nodes        : 8
+I0723 07:02:11.998000 140099030734656 torch/distributed/launcher/api.py:188]   nproc_per_node   : 1
+I0723 07:02:11.998000 140099030734656 torch/distributed/launcher/api.py:188]   run_id           : 26590
+I0723 07:02:11.998000 140099030734656 torch/distributed/launcher/api.py:188]   rdzv_backend     : c10d
+I0723 07:02:11.998000 140099030734656 torch/distributed/launcher/api.py:188]   rdzv_endpoint    : 141.142.254.25:29500
+I0723 07:02:11.998000 140099030734656 torch/distributed/launcher/api.py:188]   rdzv_configs     : {'timeout': 900}
+I0723 07:02:11.961000 140266378585920 torch/distributed/launcher/api.py:188]   max_restarts     : 0
+I0723 07:02:11.961000 140266378585920 torch/distributed/launcher/api.py:188]   monitor_interval : 5
+I0723 07:02:11.961000 140266378585920 torch/distributed/launcher/api.py:188]   log_dir          : /tmp/torchelastic_s6_vpcfs
+I0723 07:02:11.961000 140266378585920 torch/distributed/launcher/api.py:188]   metrics_cfg      : {}
+I0723 07:02:11.961000 140266378585920 torch/distributed/launcher/api.py:188] 
+I0723 07:02:11.972000 140266378585920 torch/distributed/elastic/agent/server/api.py:866] [default] starting workers for entrypoint: python3.10
+I0723 07:02:11.973000 140266378585920 torch/distributed/elastic/agent/server/api.py:699] [default] Rendezvous'ing worker group
+I0723 07:02:12.011000 140106532472640 torch/distributed/launcher/api.py:188] Starting elastic_operator with launch configs:
+I0723 07:02:12.011000 140106532472640 torch/distributed/launcher/api.py:188]   entrypoint       : ./SFT3.py
+I0723 07:02:12.011000 140106532472640 torch/distributed/launcher/api.py:188]   min_nodes        : 8
+I0723 07:02:12.011000 140106532472640 torch/distributed/launcher/api.py:188]   max_nodes        : 8
+I0723 07:02:12.011000 140106532472640 torch/distributed/launcher/api.py:188]   nproc_per_node   : 1
+I0723 07:02:12.011000 140106532472640 torch/distributed/launcher/api.py:188]   run_id           : 26590
+I0723 07:02:12.011000 140106532472640 torch/distributed/launcher/api.py:188]   rdzv_backend     : c10d
+I0723 07:02:12.011000 140106532472640 torch/distributed/launcher/api.py:188]   rdzv_endpoint    : 141.142.254.25:29500
+I0723 07:02:12.011000 140106532472640 torch/distributed/launcher/api.py:188]   rdzv_configs     : {'timeout': 900}
+I0723 07:02:11.970000 140590082209600 torch/distributed/launcher/api.py:188]   max_restarts     : 0
+I0723 07:02:11.970000 140590082209600 torch/distributed/launcher/api.py:188]   monitor_interval : 5
+I0723 07:02:11.970000 140590082209600 torch/distributed/launcher/api.py:188]   log_dir          : /tmp/torchelastic_apyfqvqh
+I0723 07:02:11.970000 140590082209600 torch/distributed/launcher/api.py:188]   metrics_cfg      : {}
+I0723 07:02:11.970000 140590082209600 torch/distributed/launcher/api.py:188] 
+I0723 07:02:11.979000 140590082209600 torch/distributed/elastic/agent/server/api.py:866] [default] starting workers for entrypoint: python3.10
+I0723 07:02:11.979000 140590082209600 torch/distributed/elastic/agent/server/api.py:699] [default] Rendezvous'ing worker group
+I0723 07:02:11.998000 140099030734656 torch/distributed/launcher/api.py:188]   max_restarts     : 0
+I0723 07:02:11.998000 140099030734656 torch/distributed/launcher/api.py:188]   monitor_interval : 5
+I0723 07:02:11.998000 140099030734656 torch/distributed/launcher/api.py:188]   log_dir          : /tmp/torchelastic_l4h_6raj
+I0723 07:02:11.998000 140099030734656 torch/distributed/launcher/api.py:188]   metrics_cfg      : {}
+I0723 07:02:11.998000 140099030734656 torch/distributed/launcher/api.py:188] 
+I0723 07:02:12.007000 140099030734656 torch/distributed/elastic/agent/server/api.py:866] [default] starting workers for entrypoint: python3.10
+I0723 07:02:12.008000 140099030734656 torch/distributed/elastic/agent/server/api.py:699] [default] Rendezvous'ing worker group
+I0723 07:02:12.044000 140190444734272 torch/distributed/launcher/api.py:188] Starting elastic_operator with launch configs:
+I0723 07:02:12.044000 140190444734272 torch/distributed/launcher/api.py:188]   entrypoint       : ./SFT3.py
+I0723 07:02:12.044000 140190444734272 torch/distributed/launcher/api.py:188]   min_nodes        : 8
+I0723 07:02:12.044000 140190444734272 torch/distributed/launcher/api.py:188]   max_nodes        : 8
+I0723 07:02:12.044000 140190444734272 torch/distributed/launcher/api.py:188]   nproc_per_node   : 1
+I0723 07:02:12.044000 140190444734272 torch/distributed/launcher/api.py:188]   run_id           : 26590
+I0723 07:02:12.044000 140190444734272 torch/distributed/launcher/api.py:188]   rdzv_backend     : c10d
+I0723 07:02:12.044000 140190444734272 torch/distributed/launcher/api.py:188]   rdzv_endpoint    : 141.142.254.25:29500
+I0723 07:02:12.044000 140190444734272 torch/distributed/launcher/api.py:188]   rdzv_configs     : {'timeout': 900}
+I0723 07:02:12.011000 140106532472640 torch/distributed/launcher/api.py:188]   max_restarts     : 0
+I0723 07:02:12.011000 140106532472640 torch/distributed/launcher/api.py:188]   monitor_interval : 5
+I0723 07:02:12.011000 140106532472640 torch/distributed/launcher/api.py:188]   log_dir          : /tmp/torchelastic_e7fwk_ft
+I0723 07:02:12.011000 140106532472640 torch/distributed/launcher/api.py:188]   metrics_cfg      : {}
+I0723 07:02:12.011000 140106532472640 torch/distributed/launcher/api.py:188] 
+I0723 07:02:12.020000 140106532472640 torch/distributed/elastic/agent/server/api.py:866] [default] starting workers for entrypoint: python3.10
+I0723 07:02:12.021000 140106532472640 torch/distributed/elastic/agent/server/api.py:699] [default] Rendezvous'ing worker group
+I0723 07:02:12.044000 140190444734272 torch/distributed/launcher/api.py:188]   max_restarts     : 0
+I0723 07:02:12.044000 140190444734272 torch/distributed/launcher/api.py:188]   monitor_interval : 5
+I0723 07:02:12.044000 140190444734272 torch/distributed/launcher/api.py:188]   log_dir          : /tmp/torchelastic_16h1h1ad
+I0723 07:02:12.044000 140190444734272 torch/distributed/launcher/api.py:188]   metrics_cfg      : {}
+I0723 07:02:12.044000 140190444734272 torch/distributed/launcher/api.py:188] 
+I0723 07:02:12.053000 140190444734272 torch/distributed/elastic/agent/server/api.py:866] [default] starting workers for entrypoint: python3.10
+I0723 07:02:12.053000 140190444734272 torch/distributed/elastic/agent/server/api.py:699] [default] Rendezvous'ing worker group
+I0723 07:02:13.307000 140167856817984 torch/distributed/elastic/agent/server/api.py:568] [default] Rendezvous complete for workers. Result:
+I0723 07:02:13.307000 140167856817984 torch/distributed/elastic/agent/server/api.py:568]   restart_count=0
+I0723 07:02:13.307000 140167856817984 torch/distributed/elastic/agent/server/api.py:568]   master_addr=gpua025.delta.ncsa.illinois.edu
+I0723 07:02:13.307000 140167856817984 torch/distributed/elastic/agent/server/api.py:568]   master_port=51219
+I0723 07:02:13.307000 140167856817984 torch/distributed/elastic/agent/server/api.py:568]   group_rank=3
+I0723 07:02:13.307000 140167856817984 torch/distributed/elastic/agent/server/api.py:568]   group_world_size=8
+I0723 07:02:13.307000 140167856817984 torch/distributed/elastic/agent/server/api.py:568]   local_ranks=[0]
+I0723 07:02:13.307000 140167856817984 torch/distributed/elastic/agent/server/api.py:568]   role_ranks=[3]
+I0723 07:02:13.307000 140266378585920 torch/distributed/elastic/agent/server/api.py:568] [default] Rendezvous complete for workers. Result:
+I0723 07:02:13.307000 140266378585920 torch/distributed/elastic/agent/server/api.py:568]   restart_count=0
+I0723 07:02:13.307000 140266378585920 torch/distributed/elastic/agent/server/api.py:568]   master_addr=gpua025.delta.ncsa.illinois.edu
+I0723 07:02:13.307000 140266378585920 torch/distributed/elastic/agent/server/api.py:568]   master_port=51219
+I0723 07:02:13.307000 140266378585920 torch/distributed/elastic/agent/server/api.py:568]   group_rank=4
+I0723 07:02:13.307000 140266378585920 torch/distributed/elastic/agent/server/api.py:568]   group_world_size=8
+I0723 07:02:13.307000 140266378585920 torch/distributed/elastic/agent/server/api.py:568]   local_ranks=[0]
+I0723 07:02:13.307000 140266378585920 torch/distributed/elastic/agent/server/api.py:568]   role_ranks=[4]
+I0723 07:02:13.307000 140167856817984 torch/distributed/elastic/agent/server/api.py:568]   global_ranks=[3]
+I0723 07:02:13.307000 140167856817984 torch/distributed/elastic/agent/server/api.py:568]   role_world_sizes=[8]
+I0723 07:02:13.307000 140167856817984 torch/distributed/elastic/agent/server/api.py:568]   global_world_sizes=[8]
+I0723 07:02:13.307000 140167856817984 torch/distributed/elastic/agent/server/api.py:568] 
+I0723 07:02:13.307000 140266378585920 torch/distributed/elastic/agent/server/api.py:568]   global_ranks=[4]
+I0723 07:02:13.307000 140266378585920 torch/distributed/elastic/agent/server/api.py:568]   role_world_sizes=[8]
+I0723 07:02:13.307000 140266378585920 torch/distributed/elastic/agent/server/api.py:568]   global_world_sizes=[8]
+I0723 07:02:13.307000 140266378585920 torch/distributed/elastic/agent/server/api.py:568] 
+I0723 07:02:13.307000 140190444734272 torch/distributed/elastic/agent/server/api.py:568] [default] Rendezvous complete for workers. Result:
+I0723 07:02:13.307000 140190444734272 torch/distributed/elastic/agent/server/api.py:568]   restart_count=0
+I0723 07:02:13.307000 140190444734272 torch/distributed/elastic/agent/server/api.py:568]   master_addr=gpua025.delta.ncsa.illinois.edu
+I0723 07:02:13.307000 140190444734272 torch/distributed/elastic/agent/server/api.py:568]   master_port=51219
+I0723 07:02:13.307000 140190444734272 torch/distributed/elastic/agent/server/api.py:568]   group_rank=7
+I0723 07:02:13.307000 140190444734272 torch/distributed/elastic/agent/server/api.py:568]   group_world_size=8
+I0723 07:02:13.307000 140190444734272 torch/distributed/elastic/agent/server/api.py:568]   local_ranks=[0]
+I0723 07:02:13.307000 140190444734272 torch/distributed/elastic/agent/server/api.py:568]   role_ranks=[7]
+I0723 07:02:13.307000 140099030734656 torch/distributed/elastic/agent/server/api.py:568] [default] Rendezvous complete for workers. Result:
+I0723 07:02:13.307000 140099030734656 torch/distributed/elastic/agent/server/api.py:568]   restart_count=0
+I0723 07:02:13.307000 140099030734656 torch/distributed/elastic/agent/server/api.py:568]   master_addr=gpua025.delta.ncsa.illinois.edu
+I0723 07:02:13.307000 140099030734656 torch/distributed/elastic/agent/server/api.py:568]   master_port=51219
+I0723 07:02:13.307000 140099030734656 torch/distributed/elastic/agent/server/api.py:568]   group_rank=6
+I0723 07:02:13.307000 140099030734656 torch/distributed/elastic/agent/server/api.py:568]   group_world_size=8
+I0723 07:02:13.307000 140099030734656 torch/distributed/elastic/agent/server/api.py:568]   local_ranks=[0]
+I0723 07:02:13.307000 140099030734656 torch/distributed/elastic/agent/server/api.py:568]   role_ranks=[6]
+I0723 07:02:13.306000 140300735231808 torch/distributed/elastic/agent/server/api.py:568] [default] Rendezvous complete for workers. Result:
+I0723 07:02:13.306000 140300735231808 torch/distributed/elastic/agent/server/api.py:568]   restart_count=0
+I0723 07:02:13.306000 140300735231808 torch/distributed/elastic/agent/server/api.py:568]   master_addr=gpua025.delta.ncsa.illinois.edu
+I0723 07:02:13.306000 140300735231808 torch/distributed/elastic/agent/server/api.py:568]   master_port=51219
+I0723 07:02:13.306000 140300735231808 torch/distributed/elastic/agent/server/api.py:568]   group_rank=0
+I0723 07:02:13.306000 140300735231808 torch/distributed/elastic/agent/server/api.py:568]   group_world_size=8
+I0723 07:02:13.306000 140300735231808 torch/distributed/elastic/agent/server/api.py:568]   local_ranks=[0]
+I0723 07:02:13.306000 140300735231808 torch/distributed/elastic/agent/server/api.py:568]   role_ranks=[0]
+I0723 07:02:13.307000 140106532472640 torch/distributed/elastic/agent/server/api.py:568] [default] Rendezvous complete for workers. Result:
+I0723 07:02:13.307000 140106532472640 torch/distributed/elastic/agent/server/api.py:568]   restart_count=0
+I0723 07:02:13.307000 140106532472640 torch/distributed/elastic/agent/server/api.py:568]   master_addr=gpua025.delta.ncsa.illinois.edu
+I0723 07:02:13.307000 140106532472640 torch/distributed/elastic/agent/server/api.py:568]   master_port=51219
+I0723 07:02:13.307000 140106532472640 torch/distributed/elastic/agent/server/api.py:568]   group_rank=1
+I0723 07:02:13.307000 140106532472640 torch/distributed/elastic/agent/server/api.py:568]   group_world_size=8
+I0723 07:02:13.307000 140106532472640 torch/distributed/elastic/agent/server/api.py:568]   local_ranks=[0]
+I0723 07:02:13.307000 140106532472640 torch/distributed/elastic/agent/server/api.py:568]   role_ranks=[1]
+I0723 07:02:13.307000 140167856817984 torch/distributed/elastic/agent/server/api.py:707] [default] Starting worker group
+I0723 07:02:13.307000 140266378585920 torch/distributed/elastic/agent/server/api.py:707] [default] Starting worker group
+I0723 07:02:13.307000 140190444734272 torch/distributed/elastic/agent/server/api.py:568]   global_ranks=[7]
+I0723 07:02:13.307000 140190444734272 torch/distributed/elastic/agent/server/api.py:568]   role_world_sizes=[8]
+I0723 07:02:13.307000 140190444734272 torch/distributed/elastic/agent/server/api.py:568]   global_world_sizes=[8]
+I0723 07:02:13.307000 140190444734272 torch/distributed/elastic/agent/server/api.py:568] 
+I0723 07:02:13.306000 140590082209600 torch/distributed/elastic/agent/server/api.py:568] [default] Rendezvous complete for workers. Result:
+I0723 07:02:13.306000 140590082209600 torch/distributed/elastic/agent/server/api.py:568]   restart_count=0
+I0723 07:02:13.306000 140590082209600 torch/distributed/elastic/agent/server/api.py:568]   master_addr=gpua025.delta.ncsa.illinois.edu
+I0723 07:02:13.306000 140590082209600 torch/distributed/elastic/agent/server/api.py:568]   master_port=51219
+I0723 07:02:13.306000 140590082209600 torch/distributed/elastic/agent/server/api.py:568]   group_rank=2
+I0723 07:02:13.306000 140590082209600 torch/distributed/elastic/agent/server/api.py:568]   group_world_size=8
+I0723 07:02:13.306000 140590082209600 torch/distributed/elastic/agent/server/api.py:568]   local_ranks=[0]
+I0723 07:02:13.306000 140590082209600 torch/distributed/elastic/agent/server/api.py:568]   role_ranks=[2]
+I0723 07:02:13.307000 140099030734656 torch/distributed/elastic/agent/server/api.py:568]   global_ranks=[6]
+I0723 07:02:13.307000 140099030734656 torch/distributed/elastic/agent/server/api.py:568]   role_world_sizes=[8]
+I0723 07:02:13.307000 140099030734656 torch/distributed/elastic/agent/server/api.py:568]   global_world_sizes=[8]
+I0723 07:02:13.307000 140099030734656 torch/distributed/elastic/agent/server/api.py:568] 
+I0723 07:02:13.307000 140572584228672 torch/distributed/elastic/agent/server/api.py:568] [default] Rendezvous complete for workers. Result:
+I0723 07:02:13.307000 140572584228672 torch/distributed/elastic/agent/server/api.py:568]   restart_count=0
+I0723 07:02:13.307000 140572584228672 torch/distributed/elastic/agent/server/api.py:568]   master_addr=gpua025.delta.ncsa.illinois.edu
+I0723 07:02:13.307000 140572584228672 torch/distributed/elastic/agent/server/api.py:568]   master_port=51219
+I0723 07:02:13.307000 140572584228672 torch/distributed/elastic/agent/server/api.py:568]   group_rank=5
+I0723 07:02:13.307000 140572584228672 torch/distributed/elastic/agent/server/api.py:568]   group_world_size=8
+I0723 07:02:13.307000 140572584228672 torch/distributed/elastic/agent/server/api.py:568]   local_ranks=[0]
+I0723 07:02:13.307000 140572584228672 torch/distributed/elastic/agent/server/api.py:568]   role_ranks=[5]
+I0723 07:02:13.306000 140300735231808 torch/distributed/elastic/agent/server/api.py:568]   global_ranks=[0]
+I0723 07:02:13.306000 140300735231808 torch/distributed/elastic/agent/server/api.py:568]   role_world_sizes=[8]
+I0723 07:02:13.306000 140300735231808 torch/distributed/elastic/agent/server/api.py:568]   global_world_sizes=[8]
+I0723 07:02:13.306000 140300735231808 torch/distributed/elastic/agent/server/api.py:568] 
+I0723 07:02:13.307000 140106532472640 torch/distributed/elastic/agent/server/api.py:568]   global_ranks=[1]
+I0723 07:02:13.307000 140106532472640 torch/distributed/elastic/agent/server/api.py:568]   role_world_sizes=[8]
+I0723 07:02:13.307000 140106532472640 torch/distributed/elastic/agent/server/api.py:568]   global_world_sizes=[8]
+I0723 07:02:13.307000 140106532472640 torch/distributed/elastic/agent/server/api.py:568] 
+I0723 07:02:13.307000 140190444734272 torch/distributed/elastic/agent/server/api.py:707] [default] Starting worker group
+I0723 07:02:13.306000 140590082209600 torch/distributed/elastic/agent/server/api.py:568]   global_ranks=[2]
+I0723 07:02:13.306000 140590082209600 torch/distributed/elastic/agent/server/api.py:568]   role_world_sizes=[8]
+I0723 07:02:13.306000 140590082209600 torch/distributed/elastic/agent/server/api.py:568]   global_world_sizes=[8]
+I0723 07:02:13.306000 140590082209600 torch/distributed/elastic/agent/server/api.py:568] 
+I0723 07:02:13.307000 140099030734656 torch/distributed/elastic/agent/server/api.py:707] [default] Starting worker group
+I0723 07:02:13.307000 140572584228672 torch/distributed/elastic/agent/server/api.py:568]   global_ranks=[5]
+I0723 07:02:13.307000 140572584228672 torch/distributed/elastic/agent/server/api.py:568]   role_world_sizes=[8]
+I0723 07:02:13.307000 140572584228672 torch/distributed/elastic/agent/server/api.py:568]   global_world_sizes=[8]
+I0723 07:02:13.307000 140572584228672 torch/distributed/elastic/agent/server/api.py:568] 
+I0723 07:02:13.306000 140300735231808 torch/distributed/elastic/agent/server/api.py:707] [default] Starting worker group
+I0723 07:02:13.307000 140106532472640 torch/distributed/elastic/agent/server/api.py:707] [default] Starting worker group
+I0723 07:02:13.306000 140590082209600 torch/distributed/elastic/agent/server/api.py:707] [default] Starting worker group
+I0723 07:02:13.307000 140572584228672 torch/distributed/elastic/agent/server/api.py:707] [default] Starting worker group
+I0723 07:02:13.306000 140300735231808 torch/distributed/elastic/agent/server/local_elastic_agent.py:168] Environment variable 'TORCHELASTIC_ENABLE_FILE_TIMER' not found. Do not start FileTimerServer.
+I0723 07:02:13.307000 140167856817984 torch/distributed/elastic/agent/server/local_elastic_agent.py:168] Environment variable 'TORCHELASTIC_ENABLE_FILE_TIMER' not found. Do not start FileTimerServer.
+I0723 07:02:13.307000 140266378585920 torch/distributed/elastic/agent/server/local_elastic_agent.py:168] Environment variable 'TORCHELASTIC_ENABLE_FILE_TIMER' not found. Do not start FileTimerServer.
+I0723 07:02:13.307000 140190444734272 torch/distributed/elastic/agent/server/local_elastic_agent.py:168] Environment variable 'TORCHELASTIC_ENABLE_FILE_TIMER' not found. Do not start FileTimerServer.
+I0723 07:02:13.307000 140099030734656 torch/distributed/elastic/agent/server/local_elastic_agent.py:168] Environment variable 'TORCHELASTIC_ENABLE_FILE_TIMER' not found. Do not start FileTimerServer.
+I0723 07:02:13.308000 140167856817984 torch/distributed/elastic/multiprocessing/api.py:263] log directory set to: /tmp/torchelastic_obpavw68/26590_583e02ov
+I0723 07:02:13.308000 140266378585920 torch/distributed/elastic/multiprocessing/api.py:263] log directory set to: /tmp/torchelastic_s6_vpcfs/26590_pin7_otd
+I0723 07:02:13.306000 140590082209600 torch/distributed/elastic/agent/server/local_elastic_agent.py:168] Environment variable 'TORCHELASTIC_ENABLE_FILE_TIMER' not found. Do not start FileTimerServer.
+I0723 07:02:13.308000 140572584228672 torch/distributed/elastic/agent/server/local_elastic_agent.py:168] Environment variable 'TORCHELASTIC_ENABLE_FILE_TIMER' not found. Do not start FileTimerServer.
+I0723 07:02:13.306000 140300735231808 torch/distributed/elastic/multiprocessing/api.py:263] log directory set to: /tmp/torchelastic_32ursmfl/26590_jv38a33a
+I0723 07:02:13.308000 140106532472640 torch/distributed/elastic/agent/server/local_elastic_agent.py:168] Environment variable 'TORCHELASTIC_ENABLE_FILE_TIMER' not found. Do not start FileTimerServer.
+I0723 07:02:13.308000 140190444734272 torch/distributed/elastic/multiprocessing/api.py:263] log directory set to: /tmp/torchelastic_16h1h1ad/26590_grhgfugr
+I0723 07:02:13.308000 140099030734656 torch/distributed/elastic/multiprocessing/api.py:263] log directory set to: /tmp/torchelastic_l4h_6raj/26590_bzcfl1ok
+I0723 07:02:13.308000 140167856817984 torch/distributed/elastic/multiprocessing/api.py:358] Setting worker0 reply file to: /tmp/torchelastic_obpavw68/26590_583e02ov/attempt_0/0/error.json
+I0723 07:02:13.308000 140266378585920 torch/distributed/elastic/multiprocessing/api.py:358] Setting worker0 reply file to: /tmp/torchelastic_s6_vpcfs/26590_pin7_otd/attempt_0/0/error.json
+I0723 07:02:13.308000 140190444734272 torch/distributed/elastic/multiprocessing/api.py:358] Setting worker0 reply file to: /tmp/torchelastic_16h1h1ad/26590_grhgfugr/attempt_0/0/error.json
+I0723 07:02:13.308000 140099030734656 torch/distributed/elastic/multiprocessing/api.py:358] Setting worker0 reply file to: /tmp/torchelastic_l4h_6raj/26590_bzcfl1ok/attempt_0/0/error.json
+I0723 07:02:13.308000 140572584228672 torch/distributed/elastic/multiprocessing/api.py:263] log directory set to: /tmp/torchelastic_c7kpshl7/26590_jf3tcan0
+I0723 07:02:13.307000 140300735231808 torch/distributed/elastic/multiprocessing/api.py:358] Setting worker0 reply file to: /tmp/torchelastic_32ursmfl/26590_jv38a33a/attempt_0/0/error.json
+I0723 07:02:13.308000 140106532472640 torch/distributed/elastic/multiprocessing/api.py:263] log directory set to: /tmp/torchelastic_e7fwk_ft/26590_dtvuw97v
+I0723 07:02:13.308000 140572584228672 torch/distributed/elastic/multiprocessing/api.py:358] Setting worker0 reply file to: /tmp/torchelastic_c7kpshl7/26590_jf3tcan0/attempt_0/0/error.json
+I0723 07:02:13.307000 140590082209600 torch/distributed/elastic/multiprocessing/api.py:263] log directory set to: /tmp/torchelastic_apyfqvqh/26590_j7kj8774
+I0723 07:02:13.307000 140590082209600 torch/distributed/elastic/multiprocessing/api.py:358] Setting worker0 reply file to: /tmp/torchelastic_apyfqvqh/26590_j7kj8774/attempt_0/0/error.json
+I0723 07:02:13.308000 140106532472640 torch/distributed/elastic/multiprocessing/api.py:358] Setting worker0 reply file to: /tmp/torchelastic_e7fwk_ft/26590_dtvuw97v/attempt_0/0/error.json
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/30 [00:00<?, ?it/s]Loading checkpoint shards:   3%|▎         | 1/30 [00:04<02:17,  4.73s/it]Loading checkpoint shards:   7%|▋         | 2/30 [00:10<02:27,  5.26s/it]Loading checkpoint shards:  10%|█         | 3/30 [00:15<02:22,  5.27s/it]Loading checkpoint shards:  13%|█▎        | 4/30 [00:20<02:17,  5.29s/it]Loading checkpoint shards:  17%|█▋        | 5/30 [00:27<02:21,  5.67s/it]Loading checkpoint shards:  20%|██        | 6/30 [00:35<02:35,  6.48s/it]E0723 07:03:13.362000 140300735231808 torch/distributed/elastic/multiprocessing/api.py:826] failed (exitcode: -9) local_rank: 0 (pid: 3135435) of binary: /u/qilong/utils/miniconda3/envs/llama/bin/python3.10
+Loading checkpoint shards:   0%|          | 0/30 [00:00<?, ?it/s]Loading checkpoint shards:   3%|▎         | 1/30 [00:04<02:19,  4.80s/it]Loading checkpoint shards:   7%|▋         | 2/30 [00:10<02:28,  5.29s/it]Loading checkpoint shards:  10%|█         | 3/30 [00:15<02:24,  5.35s/it]Loading checkpoint shards:  13%|█▎        | 4/30 [00:21<02:17,  5.30s/it]Loading checkpoint shards:  17%|█▋        | 5/30 [00:27<02:21,  5.66s/it]Loading checkpoint shards:  20%|██        | 6/30 [00:35<02:34,  6.45s/it]E0723 07:03:13.370000 140572584228672 torch/distributed/elastic/multiprocessing/api.py:826] failed (exitcode: -9) local_rank: 0 (pid: 172625) of binary: /u/qilong/utils/miniconda3/envs/llama/bin/python3.10
+Loading checkpoint shards:   0%|          | 0/30 [00:00<?, ?it/s]Loading checkpoint shards:   3%|▎         | 1/30 [00:04<02:19,  4.82s/it]Loading checkpoint shards:   7%|▋         | 2/30 [00:10<02:30,  5.38s/it]Loading checkpoint shards:  10%|█         | 3/30 [00:15<02:23,  5.33s/it]Loading checkpoint shards:  13%|█▎        | 4/30 [00:21<02:17,  5.30s/it]Loading checkpoint shards:  17%|█▋        | 5/30 [00:27<02:20,  5.64s/it]Loading checkpoint shards:  20%|██        | 6/30 [00:35<02:35,  6.46s/it]E0723 07:03:13.370000 140167856817984 torch/distributed/elastic/multiprocessing/api.py:826] failed (exitcode: -9) local_rank: 0 (pid: 3018547) of binary: /u/qilong/utils/miniconda3/envs/llama/bin/python3.10
+Loading checkpoint shards:   0%|          | 0/30 [00:00<?, ?it/s]Loading checkpoint shards:   3%|▎         | 1/30 [00:04<02:18,  4.77s/it]Loading checkpoint shards:   7%|▋         | 2/30 [00:10<02:27,  5.27s/it]Loading checkpoint shards:  10%|█         | 3/30 [00:15<02:21,  5.26s/it]Loading checkpoint shards:  13%|█▎        | 4/30 [00:21<02:18,  5.31s/it]Loading checkpoint shards:  17%|█▋        | 5/30 [00:27<02:21,  5.67s/it]Loading checkpoint shards:  20%|██        | 6/30 [00:35<02:35,  6.48s/it]E0723 07:03:13.371000 140266378585920 torch/distributed/elastic/multiprocessing/api.py:826] failed (exitcode: -9) local_rank: 0 (pid: 2814070) of binary: /u/qilong/utils/miniconda3/envs/llama/bin/python3.10
+Loading checkpoint shards:   0%|          | 0/30 [00:00<?, ?it/s]Loading checkpoint shards:   3%|▎         | 1/30 [00:05<02:31,  5.23s/it]Loading checkpoint shards:   7%|▋         | 2/30 [00:10<02:32,  5.46s/it]Loading checkpoint shards:  10%|█         | 3/30 [00:16<02:26,  5.44s/it]Loading checkpoint shards:  13%|█▎        | 4/30 [00:21<02:19,  5.37s/it]Loading checkpoint shards:  17%|█▋        | 5/30 [00:27<02:22,  5.69s/it]Loading checkpoint shards:  20%|██        | 6/30 [00:35<02:35,  6.49s/it]E0723 07:03:13.372000 140106532472640 torch/distributed/elastic/multiprocessing/api.py:826] failed (exitcode: -9) local_rank: 0 (pid: 3707727) of binary: /u/qilong/utils/miniconda3/envs/llama/bin/python3.10
+Loading checkpoint shards:   0%|          | 0/30 [00:00<?, ?it/s]Loading checkpoint shards:   3%|▎         | 1/30 [00:05<02:31,  5.23s/it]Loading checkpoint shards:   7%|▋         | 2/30 [00:11<02:36,  5.57s/it]Loading checkpoint shards:  10%|█         | 3/30 [00:16<02:26,  5.43s/it]Loading checkpoint shards:  13%|█▎        | 4/30 [00:21<02:19,  5.37s/it]Loading checkpoint shards:  17%|█▋        | 5/30 [00:27<02:22,  5.68s/it]Loading checkpoint shards:  20%|██        | 6/30 [00:35<02:35,  6.48s/it]E0723 07:03:13.377000 140190444734272 torch/distributed/elastic/multiprocessing/api.py:826] failed (exitcode: -9) local_rank: 0 (pid: 357281) of binary: /u/qilong/utils/miniconda3/envs/llama/bin/python3.10
+I0723 07:03:13.381000 140300735231808 torch/distributed/elastic/multiprocessing/errors/__init__.py:360] ('local_rank %s FAILED with no error file. Decorate your entrypoint fn with @record for traceback info. See: https://pytorch.org/docs/stable/elastic/errors.html', 0)
+Traceback (most recent call last):
+  File "/u/qilong/utils/miniconda3/envs/llama/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/run.py", line 879, in main
+I0723 07:03:13.387000 140167856817984 torch/distributed/elastic/multiprocessing/errors/__init__.py:360] ('local_rank %s FAILED with no error file. Decorate your entrypoint fn with @record for traceback info. See: https://pytorch.org/docs/stable/elastic/errors.html', 3)
+Traceback (most recent call last):
+  File "/u/qilong/utils/miniconda3/envs/llama/bin/torchrun", line 8, in <module>
+I0723 07:03:13.387000 140266378585920 torch/distributed/elastic/multiprocessing/errors/__init__.py:360] ('local_rank %s FAILED with no error file. Decorate your entrypoint fn with @record for traceback info. See: https://pytorch.org/docs/stable/elastic/errors.html', 4)
+Traceback (most recent call last):
+  File "/u/qilong/utils/miniconda3/envs/llama/bin/torchrun", line 8, in <module>
+    run(args)
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/run.py", line 870, in run
+I0723 07:03:13.388000 140572584228672 torch/distributed/elastic/multiprocessing/errors/__init__.py:360] ('local_rank %s FAILED with no error file. Decorate your entrypoint fn with @record for traceback info. See: https://pytorch.org/docs/stable/elastic/errors.html', 5)
+Traceback (most recent call last):
+  File "/u/qilong/utils/miniconda3/envs/llama/bin/torchrun", line 8, in <module>
+I0723 07:03:13.388000 140106532472640 torch/distributed/elastic/multiprocessing/errors/__init__.py:360] ('local_rank %s FAILED with no error file. Decorate your entrypoint fn with @record for traceback info. See: https://pytorch.org/docs/stable/elastic/errors.html', 1)
+Traceback (most recent call last):
+  File "/u/qilong/utils/miniconda3/envs/llama/bin/torchrun", line 8, in <module>
+    elastic_launch(
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 132, in __call__
+    sys.exit(main())
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    sys.exit(main())
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 263, in launch_agent
+    sys.exit(main())
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    sys.exit(main())
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+========================================================
+./SFT3.py FAILED
+--------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+--------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-07-23_07:03:13
+  host      : gpua025.delta.ncsa.illinois.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : -9 (pid: 3135435)
+  error_file: <N/A>
+  traceback : Signal 9 (SIGKILL) received by PID 3135435
+========================================================
+    return f(*args, **kwargs)
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/run.py", line 879, in main
+    return f(*args, **kwargs)
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/run.py", line 879, in main
+    return f(*args, **kwargs)
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/run.py", line 879, in main
+    return f(*args, **kwargs)
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/run.py", line 879, in main
+    run(args)
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/run.py", line 870, in run
+    run(args)
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/run.py", line 870, in run
+    elastic_launch(
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 132, in __call__
+    run(args)
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/run.py", line 870, in run
+    run(args)
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/run.py", line 870, in run
+    elastic_launch(
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 132, in __call__
+    elastic_launch(
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 132, in __call__
+    elastic_launch(
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 263, in launch_agent
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 263, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+=======================================================
+./SFT3.py FAILED
+-------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+-------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-07-23_07:03:13
+  host      : gpua051.delta.ncsa.illinois.edu
+  rank      : 5 (local_rank: 0)
+  exitcode  : -9 (pid: 172625)
+  error_file: <N/A>
+  traceback : Signal 9 (SIGKILL) received by PID 172625
+=======================================================
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+========================================================
+./SFT3.py FAILED
+--------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+--------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-07-23_07:03:13
+  host      : gpua048.delta.ncsa.illinois.edu
+  rank      : 3 (local_rank: 0)
+  exitcode  : -9 (pid: 3018547)
+  error_file: <N/A>
+  traceback : Signal 9 (SIGKILL) received by PID 3018547
+========================================================
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 263, in launch_agent
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 263, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+========================================================
+./SFT3.py FAILED
+--------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+--------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-07-23_07:03:13
+  host      : gpua049.delta.ncsa.illinois.edu
+  rank      : 4 (local_rank: 0)
+  exitcode  : -9 (pid: 2814070)
+  error_file: <N/A>
+  traceback : Signal 9 (SIGKILL) received by PID 2814070
+========================================================
+I0723 07:03:13.396000 140190444734272 torch/distributed/elastic/multiprocessing/errors/__init__.py:360] ('local_rank %s FAILED with no error file. Decorate your entrypoint fn with @record for traceback info. See: https://pytorch.org/docs/stable/elastic/errors.html', 7)
+Traceback (most recent call last):
+  File "/u/qilong/utils/miniconda3/envs/llama/bin/torchrun", line 8, in <module>
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+========================================================
+./SFT3.py FAILED
+--------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+--------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-07-23_07:03:13
+  host      : gpua041.delta.ncsa.illinois.edu
+  rank      : 1 (local_rank: 0)
+  exitcode  : -9 (pid: 3707727)
+  error_file: <N/A>
+  traceback : Signal 9 (SIGKILL) received by PID 3707727
+========================================================
+    sys.exit(main())
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/run.py", line 879, in main
+    run(args)
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/run.py", line 870, in run
+    elastic_launch(
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 263, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+=======================================================
+./SFT3.py FAILED
+-------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+-------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-07-23_07:03:13
+  host      : gpua078.delta.ncsa.illinois.edu
+  rank      : 7 (local_rank: 0)
+  exitcode  : -9 (pid: 357281)
+  error_file: <N/A>
+  traceback : Signal 9 (SIGKILL) received by PID 357281
+=======================================================
+slurmstepd: error: Detected 1 oom_kill event in StepId=4181900.1. Some of the step tasks have been OOM Killed.
+srun: error: gpua051: task 5: Out Of Memory
+slurmstepd: error: Detected 1 oom_kill event in StepId=4181900.1. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 1 oom_kill event in StepId=4181900.1. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 1 oom_kill event in StepId=4181900.1. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 1 oom_kill event in StepId=4181900.1. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 1 oom_kill event in StepId=4181900.1. Some of the step tasks have been OOM Killed.
+Loading checkpoint shards:   0%|          | 0/30 [00:00<?, ?it/s]Loading checkpoint shards:   3%|▎         | 1/30 [00:05<02:30,  5.19s/it]Loading checkpoint shards:   7%|▋         | 2/30 [00:10<02:32,  5.46s/it]Loading checkpoint shards:  10%|█         | 3/30 [00:16<02:25,  5.40s/it]Loading checkpoint shards:  13%|█▎        | 4/30 [00:22<02:25,  5.60s/it]Loading checkpoint shards:  17%|█▋        | 5/30 [00:27<02:20,  5.64s/it]Loading checkpoint shards:  20%|██        | 6/30 [00:37<02:45,  6.89s/it]E0723 07:03:18.375000 140590082209600 torch/distributed/elastic/multiprocessing/api.py:826] failed (exitcode: -9) local_rank: 0 (pid: 3182323) of binary: /u/qilong/utils/miniconda3/envs/llama/bin/python3.10
+Loading checkpoint shards:   0%|          | 0/30 [00:00<?, ?it/s]Loading checkpoint shards:   3%|▎         | 1/30 [00:04<02:16,  4.72s/it]Loading checkpoint shards:   7%|▋         | 2/30 [00:10<02:29,  5.33s/it]Loading checkpoint shards:  10%|█         | 3/30 [00:15<02:23,  5.31s/it]Loading checkpoint shards:  13%|█▎        | 4/30 [00:21<02:23,  5.54s/it]Loading checkpoint shards:  17%|█▋        | 5/30 [00:27<02:18,  5.56s/it]Loading checkpoint shards:  20%|██        | 6/30 [00:37<02:49,  7.05s/it]E0723 07:03:18.382000 140099030734656 torch/distributed/elastic/multiprocessing/api.py:826] failed (exitcode: -9) local_rank: 0 (pid: 1852686) of binary: /u/qilong/utils/miniconda3/envs/llama/bin/python3.10
+W0723 07:03:18.454000 140586825484032 torch/distributed/elastic/rendezvous/dynamic_rendezvous.py:1252] The node 'gpua047.delta.ncsa.illinois.edu_3182320_0' has failed to send a keep-alive heartbeat to the rendezvous '26590' due to an error of type RendezvousConnectionError.
+W0723 07:03:18.466000 140590082209600 torch/distributed/elastic/rendezvous/dynamic_rendezvous.py:1203] The node 'gpua047.delta.ncsa.illinois.edu_3182320_0' has failed to shutdown the rendezvous '26590' due to an error of type RendezvousConnectionError.
+W0723 07:03:18.476000 140590082209600 torch/distributed/elastic/rendezvous/dynamic_rendezvous.py:1203] The node 'gpua047.delta.ncsa.illinois.edu_3182320_0' has failed to shutdown the rendezvous '26590' due to an error of type RendezvousConnectionError.
+W0723 07:03:18.480000 140590082209600 torch/distributed/elastic/rendezvous/dynamic_rendezvous.py:1203] The node 'gpua047.delta.ncsa.illinois.edu_3182320_0' has failed to shutdown the rendezvous '26590' due to an error of type RendezvousConnectionError.
+I0723 07:03:18.481000 140590082209600 torch/distributed/elastic/multiprocessing/errors/__init__.py:360] ('local_rank %s FAILED with no error file. Decorate your entrypoint fn with @record for traceback info. See: https://pytorch.org/docs/stable/elastic/errors.html', 2)
+Traceback (most recent call last):
+  File "/u/qilong/utils/miniconda3/envs/llama/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/run.py", line 879, in main
+    run(args)
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/run.py", line 870, in run
+    elastic_launch(
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 263, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+========================================================
+./SFT3.py FAILED
+--------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+--------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-07-23_07:03:18
+  host      : gpua047.delta.ncsa.illinois.edu
+  rank      : 2 (local_rank: 0)
+  exitcode  : -9 (pid: 3182323)
+  error_file: <N/A>
+  traceback : Signal 9 (SIGKILL) received by PID 3182323
+========================================================
+W0723 07:03:18.535000 140095774009088 torch/distributed/elastic/rendezvous/dynamic_rendezvous.py:1252] The node 'gpua073.delta.ncsa.illinois.edu_1852683_0' has failed to send a keep-alive heartbeat to the rendezvous '26590' due to an error of type RendezvousConnectionError.
+W0723 07:03:18.548000 140099030734656 torch/distributed/elastic/rendezvous/dynamic_rendezvous.py:1203] The node 'gpua073.delta.ncsa.illinois.edu_1852683_0' has failed to shutdown the rendezvous '26590' due to an error of type RendezvousConnectionError.
+W0723 07:03:18.558000 140099030734656 torch/distributed/elastic/rendezvous/dynamic_rendezvous.py:1203] The node 'gpua073.delta.ncsa.illinois.edu_1852683_0' has failed to shutdown the rendezvous '26590' due to an error of type RendezvousConnectionError.
+W0723 07:03:18.563000 140099030734656 torch/distributed/elastic/rendezvous/dynamic_rendezvous.py:1203] The node 'gpua073.delta.ncsa.illinois.edu_1852683_0' has failed to shutdown the rendezvous '26590' due to an error of type RendezvousConnectionError.
+I0723 07:03:18.563000 140099030734656 torch/distributed/elastic/multiprocessing/errors/__init__.py:360] ('local_rank %s FAILED with no error file. Decorate your entrypoint fn with @record for traceback info. See: https://pytorch.org/docs/stable/elastic/errors.html', 6)
+Traceback (most recent call last):
+  File "/u/qilong/utils/miniconda3/envs/llama/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/run.py", line 879, in main
+    run(args)
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/run.py", line 870, in run
+    elastic_launch(
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/u/qilong/utils/miniconda3/envs/llama/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 263, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+========================================================
+./SFT3.py FAILED
+--------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+--------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-07-23_07:03:18
+  host      : gpua073.delta.ncsa.illinois.edu
+  rank      : 6 (local_rank: 0)
+  exitcode  : -9 (pid: 1852686)
+  error_file: <N/A>
+  traceback : Signal 9 (SIGKILL) received by PID 1852686
+========================================================
+slurmstepd: error: Detected 1 oom_kill event in StepId=4181900.1. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 1 oom_kill event in StepId=4181900.1. Some of the step tasks have been OOM Killed.
